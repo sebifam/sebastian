@@ -1,45 +1,28 @@
-package Telefon;
+package hello;
 
 import java.util.List;
 import java.util.ArrayList;
 
-public class Telefon {
-  private String model;
-  private String marca;
-  private String an_fabricatie;
-  private int serie;
-  private String culoare;
-  
-  
+public class Masina {
+  private String name;
+  private int id;
 
   public Masina() {}
 
-  public Masina(String model, String marca, String an_fabricatie, int serie, String culoare) {
-      this.model = model;
-      this.marca = marca;
-	  this.an_fabricatie = an_fabricatie;
-	  this.serie = serie;
-	  this.culoare = culoare;
-	  
+  public Masina(int id, String name) {
+      this.name = name;
+      this.id = id;
   }
 
-  public String getModel() {
-      return this.model;
+  public String getName() {
+      return this.name;
   }
 
-  public int getMarca() {
-    return this.marca;
+  public int getId() {
+    return this.id;
   }
-  
-  public int getAnFabricatie() {
-    return this.an_fabricatie;
-  }
-  
-  public int getSERIE() {
-    return this.serie;
-  }
-  
-  public int getCuloare() {
-    return this.culoare;
+  public void setName(String name){
+	  this.name=name;
   }
 }
+Chat Conversation End
